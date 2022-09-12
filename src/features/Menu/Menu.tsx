@@ -1,5 +1,4 @@
 import className from 'classnames';
-import { useAppSelector } from '../../app/hooks';
 import './Menu.scss';
 
 type Props = {
@@ -14,7 +13,7 @@ export const Menu: React.FC<Props> = ({ hasOpen }) => {
       'Navbar__menu',
       { 'Navbar__menu--open': hasOpen }
     )}>
-      
+
     </div>
   );
 };
