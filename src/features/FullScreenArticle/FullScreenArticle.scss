@@ -1,0 +1,52 @@
+@import "../../generalStyles/utils/mixins";
+
+.FullScreenArticle {
+  position: relative;
+
+  background-image: url('../../../public/images/cars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 280px;
+
+  &__title {
+    font-size: 25px;
+
+    padding: 25% 0% 25%;
+
+    @include onTable {
+      font-size: 46px;
+    }
+
+    @include onNotebook {
+      font-size:  70px;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+
+    z-index: 1;
+    width: 2px;
+    height: 100px;
+    background-color: #bf2b12;
+
+    @include onTable {
+      top: -75px;
+
+      width: 4px;
+      height: 150px;
+    }
+
+    &:last-child {
+      bottom: -50px;
+      top: inherit;
+
+      @include onTable {
+        bottom: -75px;
+      }
+    }
+  }
+}

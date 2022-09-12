@@ -1,0 +1,126 @@
+@import "../../generalStyles/utils/mixins";
+
+.Ilustration {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+
+  margin: 100px 0;
+
+  @include onTable {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 180px 0;
+  }
+
+  &--reverse {
+    @include onTable {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--reverse &__img-container {
+    &::after {
+      content: '';
+      border: 1px solid #bf2b12;
+      box-sizing: border-box;
+      height: 70%;
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      width: 90%;
+      z-index: -1;
+    }
+  }
+
+  &--reverse &__img {
+    &:hover {
+      transform: scale(1.05) translateX(-10px) translateY(-15px);
+      position: relative;
+    }
+  }
+
+  &__block {
+    @include onTable {
+      width: 40%;
+      max-width: 600px;
+
+      &:last-child {
+        width: 60%;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+
+  &__img-container {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      border: 1px solid #bf2b12;
+      box-sizing: border-box;
+      height: 70%;
+      position: absolute;
+      right: -20px;
+      top: -20px;
+      width: 90%;
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    transition: 0.5s;
+    
+    @include onTable {
+      &:hover {
+        transform: scale(1.1) translateX(10px) translateY(-15px);
+        position: relative;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+
+    padding: 80px 100px 15px 15px;
+    max-width: 400px;
+
+    border: 2px solid;
+    border-image: linear-gradient(
+      to left,
+      #bf2b12 10%,
+      transparent 80%
+    );
+    border-image-slice: 1;
+
+    transition: 0.5s;
+
+    &:hover {
+      border-image: linear-gradient(
+      to right,
+      #bf2b12 10%,
+      transparent 80%
+    );
+    border-image-slice: 1;
+    }
+  }
+
+  &__name-link {
+    font-size: 46px;
+    color: #fff;
+  }
+
+  &__arrow {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+}

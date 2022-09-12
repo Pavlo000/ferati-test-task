@@ -1,0 +1,50 @@
+.Testimonials {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 28.3%);
+    grid-template-rows: repeat(3, 28.3%);
+    gap: 5%;
+
+    list-style: none;
+    justify-content: center;
+  }
+
+  &__item {
+  }
+
+  &__photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link {
+    box-sizing: border-box;
+
+    padding: 30px 50px;
+    border: 2px solid;
+    border-image: linear-gradient(
+      to bottom,
+      #bf2b12 10%,
+      transparent 80%
+    );
+    border-image-slice: 1;
+
+    font-family: 'Leroy Merlin';
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #bf2b12;
+    }
+
+    margin: 0 auto;
+  }
+}

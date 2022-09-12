@@ -1,0 +1,12 @@
+{
+  "est": {
+    "linkOne": "Autod",
+    "linkTwo": "Teenused",
+    "linkThree": "Kontakt"
+  },
+  "eng": {
+    "linkOne": "Cars",
+    "linkTwo": "Services",
+    "linkThree": "Contact"
+  }
+}

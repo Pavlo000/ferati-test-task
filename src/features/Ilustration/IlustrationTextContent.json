@@ -1,0 +1,22 @@
+{
+  "firstVersion": {
+    "est": {
+      "title": "Valik kontrollitud autosid",
+      "link": "Autod"
+    },
+    "eng": {
+      "title": "Check out our cars in stock",
+      "link": "Cars"
+    }
+  },
+  "secondVersion": {
+    "est": {
+      "title": "Leiame Sulle sobiva auto",
+      "link": "Tellimine"
+    },
+    "eng": {
+      "title": "Let us find you a decent car",
+      "link": "Ordering"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "eng": {
+    "title": "How can we help you?",
+    "placeHolderName": "Your Name",
+    "placeHolderEmail": "E-mail",
+    "placeHolderNumber": "Phone number",
+    "placeHolderMessage": "Message",
+    "button": "Saada"
+  },
+  "est": {
+    "title": "Kuidas saame aidata?",
+    "placeHolderName": "Sinu Nimi",
+    "placeHolderEmail": "E-post",
+    "placeHolderNumber": "Telefoninumber",
+    "placeHolderMessage": "Sõnum",
+    "button": "Send"
+  }
+}

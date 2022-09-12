@@ -1,0 +1,13 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+
+.container {
+  padding: 0 $body-padding;
+
+  @include onTable {
+    width: 80%;
+    max-width: 1400px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

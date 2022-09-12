@@ -1,0 +1,10 @@
+@mixin onTable() {
+  @media (min-width:  992px) {
+    @content;
+  }
+}
+@mixin onNotebook() {
+  @media (min-width:  1400px) {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../generalStyles/utils/mixins";
+
+.Footer {
+  text-align: center;
+
+  @include onTable {
+    line-height: 200px;
+  }
+}

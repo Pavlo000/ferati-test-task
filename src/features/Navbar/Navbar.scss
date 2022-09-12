@@ -1,0 +1,65 @@
+@import "../../generalStyles/utils/vars";
+@import "../../generalStyles/utils/mixins";
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 16px 30px 0;
+
+  @include onTable {
+    height: 80px;
+    padding: 20px 80px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  @include onNotebook {
+    height: 100px;
+  }
+
+  &__logo {
+    width: 128px;
+
+    @include onNotebook {
+      width: 250px;
+    }
+  }
+
+  &__icon-menu {
+    background-color: transparent;
+    border: 0;
+
+    @include onTable {
+      display: none;
+    }
+  }
+
+  &__icon-cross {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateY(-100%);
+    transition: 0.3s;
+
+    &--open {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../generalStyles/utils/mixins";
+
+.ContactUs {
+
+  padding: 100px 0;
+
+  @include onTable {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1fr;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    grid-column: 1 / 6;
+    grid-row: 2;
+  }
+
+  &__title {
+    grid-column: 1 / 6;
+    font-size: 40px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding: 20px 0 20px 15px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #bf2b12;
+
+    font-family: "Leroy Merlin";
+    font-size: 20px;
+    color: #fff;
+
+    &::placeholder {
+      font-family: "Leroy Merlin";
+      font-size: 20px;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      border-bottom: 2px solid #bf2b12;
+    }
+
+    &--textarea {
+      padding-bottom: 100px;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+
+    padding: 30px 50px;
+    border: 2px solid;
+    border-image: linear-gradient(
+      to top,
+      #bf2b12 10%,
+      transparent 80%
+    );
+    border-image-slice: 1;
+
+    background-color: transparent;
+
+    font-family: 'Leroy Merlin';
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #bf2b12;
+    }
+
+    margin: 20px auto;
+  }
+
+  &__InfoDetails {
+    grid-column: 8 / 12;
+  }
+}
