@@ -1,24 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Navbar } from './features/Navbar';
 
-function App() {
+import './App.scss';
+import './generalStyles/reset.scss';
+import './generalStyles/normalize.scss';
+import './generalStyles/container.scss';
+
+import { useEffect, useState } from 'react';
+import { Menu } from './features/Menu';
+import { useAppDispatch } from './app/hooks';
+import { changeHasLargeScreen } from './AppSlice';
+
+const App: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  const tableWidth = 992;
+
+  const [hasMenu, setHasMenu] = useState(false);
+
+  const onClick = () => {
+    setHasMenu(!hasMenu);
+  };
+
+  useEffect(() => {
+    const handleResize = (event: Event) => {
+      const target = event.target as Window;
+
+      if (target.window.innerWidth < tableWidth) {
+        dispatch(changeHasLargeScreen(false));
+      } else {
+        setHasMenu(false);
+        dispatch(changeHasLargeScreen(true));
+      }
+    }
+    window.addEventListener('resize', (event) => handleResize(event));
+
+    return () => {
+      window.removeEventListener('resize', (event) => handleResize(event));
+    }
+
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu hasOpen={hasMenu} />
+      <Navbar 
+        handlerClick={onClick} 
+        hasMenu={hasMenu} 
+      />
+
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </div>
   );
 }
