@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ferati-test-task/static/css/main.0a3d935a.css",
-    "main.js": "/ferati-test-task/static/js/main.6959698e.js",
+    "main.js": "/ferati-test-task/static/js/main.6e5a44fb.js",
     "static/media/cars.jpg": "/ferati-test-task/static/media/cars.070a087e8d40c937e098.jpg",
     "static/media/Gilroy-Light.ttf": "/ferati-test-task/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
     "static/media/Gilroy-Thin.ttf": "/ferati-test-task/static/media/Gilroy-Thin.fc813b757bc09eb509dc.ttf",
@@ -19,10 +19,10 @@
     "static/media/facebook--hover.svg": "/ferati-test-task/static/media/facebook--hover.e4747d7c29b4a4804d5b.svg",
     "static/media/facebook.svg": "/ferati-test-task/static/media/facebook.3bcfdf6a3064234ccaf8.svg",
     "main.0a3d935a.css.map": "/ferati-test-task/static/css/main.0a3d935a.css.map",
-    "main.6959698e.js.map": "/ferati-test-task/static/js/main.6959698e.js.map"
+    "main.6e5a44fb.js.map": "/ferati-test-task/static/js/main.6e5a44fb.js.map"
   },
   "entrypoints": [
     "static/css/main.0a3d935a.css",
-    "static/js/main.6959698e.js"
+    "static/js/main.6e5a44fb.js"
   ]
 }
