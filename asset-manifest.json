@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.190a7791.css",
+    "main.js": "/static/js/main.6959698e.js",
+    "static/media/cars.jpg": "/static/media/cars.070a087e8d40c937e098.jpg",
+    "static/media/Gilroy-Light.ttf": "/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
+    "static/media/Gilroy-Thin.ttf": "/static/media/Gilroy-Thin.fc813b757bc09eb509dc.ttf",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/Gilroy-Black.ttf": "/static/media/Gilroy-Black.4628979a4dac24916ba7.ttf",
+    "static/media/premiumCars.svg": "/static/media/premiumCars.97f9bf4386bbad58aeac.svg",
+    "static/media/weDeliver.svg": "/static/media/weDeliver.6b79d4153243411aeaf3.svg",
+    "static/media/instagram--hover.svg": "/static/media/instagram--hover.cf0e98e191dba03e23cf.svg",
+    "static/media/instagram.svg": "/static/media/instagram.2299e18ec16b850759da.svg",
+    "static/media/linkenIn--hover.svg": "/static/media/linkenIn--hover.e928a266b2d609beb2bb.svg",
+    "static/media/linkenIn.svg": "/static/media/linkenIn.5d1428162c3ad51ee6a5.svg",
+    "index.html": "/index.html",
+    "static/media/facebook--hover.svg": "/static/media/facebook--hover.e4747d7c29b4a4804d5b.svg",
+    "static/media/facebook.svg": "/static/media/facebook.3bcfdf6a3064234ccaf8.svg",
+    "main.190a7791.css.map": "/static/css/main.190a7791.css.map",
+    "main.6959698e.js.map": "/static/js/main.6959698e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.190a7791.css",
+    "static/js/main.6959698e.js"
+  ]
+}
