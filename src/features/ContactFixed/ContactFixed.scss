@@ -14,33 +14,6 @@
     gap: 20px;
   }
 
-  &__button {
-    background-color: transparent;
-    border: 0;
-
-    font-family: 'Leroy Merlin', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-
-    color: white;
-
-    transition: 0.3s;
-
-    &--checked {
-      color: #bf2b12;
-    }
-
-    &:hover {
-      color: #bf2b12;
-    }
-  }
-
-  &__shape {
-    color: white;
-    font-size: 24px;
-    font-weight: 100;
-  }
-
   &__tel {
     font-size: 20px;
     color: white;

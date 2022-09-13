@@ -4,7 +4,7 @@ import './Header.scss';
 import { useAppSelector } from '../../app/hooks';
 
 export const Header: React.FC = () => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
   const largeScreen = useAppSelector(state => state.app.hasLargeScreen);
 
   const currentLang = text[lang];

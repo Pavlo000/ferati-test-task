@@ -1,10 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import contactFixedReducer from '../features/ContactFixed/ContactFixedSlice';
+import langReducer from '../features/Lang/LangSlice';
 import appReducer from '../AppSlice';
 
 export const store = configureStore({
   reducer: {
-    contactFixed: contactFixedReducer,
+    lang: langReducer,
     app: appReducer,
   },
 });

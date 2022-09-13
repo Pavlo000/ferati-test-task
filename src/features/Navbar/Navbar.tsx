@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { useAppSelector } from '../../app/hooks';
 import { NavList } from '../NavList';
 import './Navbar.scss';
@@ -14,7 +15,9 @@ export const Navbar: React.FC<Props> = ({
   const largeScreen = useAppSelector(state => state.app.hasLargeScreen);
   return (
     <nav className="Navbar">
-      <img src="./icons/logo.svg" className="Navbar__logo" alt="logo" />
+      <NavLink to='/'>
+        <img src="./icons/logo.svg" className="Navbar__logo" alt="logo" />
+      </NavLink>
 
       {hasMenu ? ( 
         <button className="Navbar__icon-cross" onClick={handlerClick}>

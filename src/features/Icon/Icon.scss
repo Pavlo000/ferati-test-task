@@ -1,0 +1,40 @@
+.Icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+
+  
+  &--facebook {
+    background-image: url('../../../public/icons/facebook.svg');
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url('../../../public/icons/facebook--hover.svg');
+    }
+  }
+
+  &--instagram {
+    background-image: url('../../../public/icons/instagram.svg');
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url('../../../public/icons/instagram--hover.svg');
+    }
+  }
+
+  &--linkenin {
+    background-image: url('../../../public/icons/linkenIn.svg');
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url('../../../public/icons/linkenIn--hover.svg');
+    }
+  }
+
+  &--tel {
+    background-image: url('../../../public/icons/tel.svg');
+    transition: 0.3s;
+  }
+}

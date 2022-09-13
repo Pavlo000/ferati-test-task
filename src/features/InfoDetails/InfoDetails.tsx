@@ -1,3 +1,4 @@
+import { Icon } from '../Icon';
 import './InfoDetails.scss';
 
 export const InfoDetails: React.FC = () => {
@@ -40,9 +41,9 @@ export const InfoDetails: React.FC = () => {
       </p>
 
       <div className="InfoDetails__socials">
-        <div className="InfoDetails__social InfoDetails__social--facebook" />
-        <div className="InfoDetails__social InfoDetails__social--instagram" />
-        <div className="InfoDetails__social InfoDetails__social--linkenin" />
+        <Icon name='facebook' />
+        <Icon name='instagram' />
+        <Icon name='linkenin' />
       </div>
     </div>
   );

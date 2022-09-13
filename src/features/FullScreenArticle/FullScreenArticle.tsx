@@ -3,7 +3,7 @@ import text from './FullSATextContent.json';
 import './FullScreenArticle.scss';
 
 export const FullScreenArticle: React.FC = () => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
 
   const currentLang = text[lang];
 

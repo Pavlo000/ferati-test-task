@@ -3,7 +3,7 @@ import './Testimonials.scss';
 import text from './TestimonialsTextContent.json';
 
 export const Testimonials: React.FC = () => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
   const currentLang = text[lang];
 
   const listOfCars = () => {
@@ -36,7 +36,12 @@ export const Testimonials: React.FC = () => {
           ))}
       </ul>
 
-      <a href="/" className="Testimonials__link">
+      <a 
+        href="https://www.instagram.com/ferati.ee/"
+        className="Testimonials__link"
+        target="_blank" 
+        rel="noreferrer"
+      >
         {currentLang.link}
       </a>
     </div>

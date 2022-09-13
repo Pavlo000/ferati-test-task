@@ -5,7 +5,7 @@
     "placeHolderEmail": "E-mail",
     "placeHolderNumber": "Phone number",
     "placeHolderMessage": "Message",
-    "button": "Saada"
+    "button": "Send"
   },
   "est": {
     "title": "Kuidas saame aidata?",
@@ -13,6 +13,6 @@
     "placeHolderEmail": "E-post",
     "placeHolderNumber": "Telefoninumber",
     "placeHolderMessage": "Sõnum",
-    "button": "Send"
+    "button": "Saada"
   }
 }

@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const Ilustration: React.FC<Props> = ({ hasReverse }) => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
   const [currentLang, setCurrentLang] = useState<any>(null);
 
   useEffect(() => {

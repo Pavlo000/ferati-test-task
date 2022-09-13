@@ -4,7 +4,7 @@ import './Introduction.scss';
 import { IntroDesc } from '../IntroDesc';
 
 export const Introduction: React.FC = () => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
 
   const currentLang = text[lang];
 

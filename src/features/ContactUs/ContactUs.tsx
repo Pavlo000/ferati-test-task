@@ -4,7 +4,7 @@ import './ContactUs.scss';
 import { useAppSelector } from '../../app/hooks';
 
 export const ContactUs: React.FC = () => {
-  const lang = useAppSelector(state => state.contactFixed.lang);
+  const lang = useAppSelector(state => state.lang.lang);
   const currentLang = text[lang];
 
   return (
@@ -13,7 +13,11 @@ export const ContactUs: React.FC = () => {
         {currentLang.title}
       </h3>
 
-      <form className="ContactUs__form" autoComplete="off">
+      <form 
+        className="ContactUs__form" 
+        autoComplete="off"
+        onSubmit={(event) => event.preventDefault()}
+      >
         <input
           type="text"
           name="name"

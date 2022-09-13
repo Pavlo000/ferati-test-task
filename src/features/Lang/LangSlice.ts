@@ -1,14 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-export interface ContactFixedState {
+export interface LangState {
   lang: 'eng' | 'est';
 }
 
-const initialState: ContactFixedState = {
+const initialState: LangState = {
   lang: 'eng',
 };
 
-export const contactFixedSlice = createSlice({
+export const LangSlice = createSlice({
   name: 'lang',
   initialState,
   reducers: {
@@ -18,6 +18,6 @@ export const contactFixedSlice = createSlice({
   },
 });
 
-export const { changeLang } = contactFixedSlice.actions;
+export const { changeLang } = LangSlice.actions;
 
-export default contactFixedSlice.reducer;
+export default LangSlice.reducer;
