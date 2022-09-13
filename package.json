@@ -1,5 +1,6 @@
 {
   "name": "ferati",
+  "homepage": "https://pavlo000.github.io/ferati-test-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
