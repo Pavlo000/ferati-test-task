@@ -3,7 +3,6 @@ import text from './NavListTextContent.json';
 import './NavList.scss';
 import { NavLink } from 'react-router-dom';
 import { Icon } from '../Icon';
-import { Lang } from '../Lang';
 
 export const NavList: React.FC = () => {
   const lang = useAppSelector(state => state.lang.lang);
