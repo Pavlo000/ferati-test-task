@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/ferati-test-task/static/css/main.2fc9fded.css",
-    "main.js": "/ferati-test-task/static/js/main.47b2e403.js",
-    "static/media/cars.jpg": "/ferati-test-task/static/media/cars.070a087e8d40c937e098.jpg",
+    "main.css": "/ferati-test-task/static/css/main.e4a3eb75.css",
+    "main.js": "/ferati-test-task/static/js/main.e8aebac1.js",
     "static/media/Gilroy-Light.ttf": "/ferati-test-task/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
     "static/media/Gilroy-Thin.ttf": "/ferati-test-task/static/media/Gilroy-Thin.fc813b757bc09eb509dc.ttf",
     "static/media/Gilroy-Medium.ttf": "/ferati-test-task/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
@@ -19,11 +18,11 @@
     "index.html": "/ferati-test-task/index.html",
     "static/media/facebook--hover.svg": "/ferati-test-task/static/media/facebook--hover.e4747d7c29b4a4804d5b.svg",
     "static/media/facebook.svg": "/ferati-test-task/static/media/facebook.3bcfdf6a3064234ccaf8.svg",
-    "main.2fc9fded.css.map": "/ferati-test-task/static/css/main.2fc9fded.css.map",
-    "main.47b2e403.js.map": "/ferati-test-task/static/js/main.47b2e403.js.map"
+    "main.e4a3eb75.css.map": "/ferati-test-task/static/css/main.e4a3eb75.css.map",
+    "main.e8aebac1.js.map": "/ferati-test-task/static/js/main.e8aebac1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fc9fded.css",
-    "static/js/main.47b2e403.js"
+    "static/css/main.e4a3eb75.css",
+    "static/js/main.e8aebac1.js"
   ]
 }
