@@ -15,6 +15,8 @@ import { Navbar } from './features/Navbar';
 import { Cars } from './pages/Cars';
 import { Services } from './pages/Services';
 import { Contact } from './pages/Contact';
+import { Background } from './features/Background';
+import { PageNotFound } from './features/PageNotFound';
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -53,12 +55,14 @@ const App: React.FC = () => {
         handlerClick={onClick} 
         hasMenu={hasMenu} 
       />
+      <Background />
 
       <Routes>
         <Route index element={<Home />} />
         <Route path='/cars' element={<Cars />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </div>
   );

@@ -1,3 +1,5 @@
+import { Parallax } from 'react-parallax';
+
 import { useAppSelector } from '../../app/hooks';
 import text from './FullSATextContent.json';
 import './FullScreenArticle.scss';
@@ -8,16 +10,22 @@ export const FullScreenArticle: React.FC = () => {
   const currentLang = text[lang];
 
   return (
-    <div className="FullScreenArticle">
-      <div className="container">
-        <div className="FullScreenArticle__shape" />
+    <section className="FullScreenArticle">
+      <div className="FullScreenArticle__shape" />
 
-        <h2 className="FullScreenArticle__title">
-          {currentLang.title}
-        </h2>
-        
-        <div className="FullScreenArticle__shape" />
-      </div>
-    </div>
+      <Parallax
+        bgImage={'./images/cars.jpg'}
+        bgImageAlt="cars"
+        strength={200}
+      >
+        <div className="container">
+          <h2 className="FullScreenArticle__title">
+            {currentLang.title}
+          </h2>
+        </div>
+      </Parallax>
+
+      <div className="FullScreenArticle__shape" />
+    </section>
   );
 };

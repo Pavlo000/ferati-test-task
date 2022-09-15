@@ -9,8 +9,8 @@ export const Introduction: React.FC = () => {
   const currentLang = text[lang];
 
   return (
-    <div className="Introduction">
-      <div className="Introduction__section">
+    <section className="Introduction">
+      <article className="Introduction__article">
         <div className="Introduction__cars">
           <img 
             src="./icons/mercedes.svg" 
@@ -53,9 +53,9 @@ export const Introduction: React.FC = () => {
             more
           </div>
         </div>
-      </div>
+      </article>
 
-      <div className="Introduction__section">
+      <article className="Introduction__article">
         <div className="Introduction__ideas">
             <h3 className="Introduction__title">
               {currentLang.title}
@@ -95,11 +95,11 @@ export const Introduction: React.FC = () => {
               </li>
             </ul>
         </div>
-      </div>
+      </article>
 
-      <div className="Introduction__section">
+      <article className="Introduction__article">
         <IntroDesc />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };

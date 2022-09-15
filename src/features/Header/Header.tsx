@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
 
 
   return (
-    <div className="Header">
+    <header className="Header">
       <div className="Header__wrapper">
         <video autoPlay loop muted className="Header__video">
           <source src="./video/Audi-RS6.mp4" type="video/mp4" />
@@ -25,6 +25,6 @@ export const Header: React.FC = () => {
 
       {largeScreen && <ContactFixed />}
 
-    </div>
+    </header>
   );
 }

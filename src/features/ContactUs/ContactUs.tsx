@@ -8,7 +8,7 @@ export const ContactUs: React.FC = () => {
   const currentLang = text[lang];
 
   return (
-    <div className="ContactUs">
+    <section className="ContactUs">
       <h3 className="ContactUs__title">
         {currentLang.title}
       </h3>
@@ -54,6 +54,6 @@ export const ContactUs: React.FC = () => {
       <div className="ContactUs__InfoDetails">
         <InfoDetails />
       </div>
-    </div>
+    </section>
   )
 } 

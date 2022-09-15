@@ -9,7 +9,7 @@ export const IntroDesc: React.FC = () => {
   const currentLang = text[lang];
 
   return (
-    <div className="IntroDesc">
+    <section className="IntroDesc">
       <ul className="IntroDesc__main-list">
         <li 
           className="IntroDesc__main-item"
@@ -51,6 +51,6 @@ export const IntroDesc: React.FC = () => {
           </li>
         )}
       </ul>
-    </div>
+    </section>
   );
 }

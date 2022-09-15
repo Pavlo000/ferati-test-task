@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { useAppSelector } from '../../app/hooks';
 import './Ilustration.scss';
 import text from './IlustrationTextContent.json';
@@ -21,7 +23,7 @@ export const Ilustration: React.FC<Props> = ({ hasReverse }) => {
   }, [hasReverse, lang]);
 
   return (
-    <div className={classNames(
+    <section className={classNames(
       'Ilustration',
       {'Ilustration--reverse': hasReverse } 
     )}>
@@ -33,8 +35,8 @@ export const Ilustration: React.FC<Props> = ({ hasReverse }) => {
         <h3 className="Ilustration__title">
           {currentLang && currentLang.title}
         </h3>
-        <a 
-          href='/' 
+        <Link
+          to={hasReverse ? '/ordering' : '/cars'} 
           className="Ilustration__link"
         >
           <h3 className="Ilustration__name-link">
@@ -46,7 +48,7 @@ export const Ilustration: React.FC<Props> = ({ hasReverse }) => {
             alt="arrow right"
             className="Ilustration__arrow"
           />
-        </a>
+        </Link>
       </div>
 
       <div
@@ -70,6 +72,6 @@ export const Ilustration: React.FC<Props> = ({ hasReverse }) => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

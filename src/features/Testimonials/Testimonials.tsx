@@ -18,7 +18,7 @@ export const Testimonials: React.FC = () => {
   };
 
   return (
-    <div className="Testimonials">
+    <section className="Testimonials">
       <img 
         src="./icons/social.svg"
         alt="social"
@@ -44,6 +44,6 @@ export const Testimonials: React.FC = () => {
       >
         {currentLang.link}
       </a>
-    </div>
+    </section>
   );
 };

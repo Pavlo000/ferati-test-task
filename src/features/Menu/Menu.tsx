@@ -10,7 +10,7 @@ type Props = {
 export const Menu: React.FC<Props> = ({ hasOpen }) => {
 
   return (
-    <div className={className(
+    <menu className={className(
       'Menu',
       'Navbar__menu',
       { 'Navbar__menu--open': hasOpen }
@@ -19,6 +19,6 @@ export const Menu: React.FC<Props> = ({ hasOpen }) => {
       <div className="Menu__lang">
         <Lang />
       </div>
-    </div>
+    </menu>
   );
 };
