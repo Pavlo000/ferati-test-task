@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ferati-test-task/static/css/main.e4a3eb75.css",
+    "main.css": "/ferati-test-task/static/css/main.9201886a.css",
     "main.js": "/ferati-test-task/static/js/main.e8aebac1.js",
     "static/media/Gilroy-Light.ttf": "/ferati-test-task/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
     "static/media/Gilroy-Thin.ttf": "/ferati-test-task/static/media/Gilroy-Thin.fc813b757bc09eb509dc.ttf",
@@ -18,11 +18,11 @@
     "index.html": "/ferati-test-task/index.html",
     "static/media/facebook--hover.svg": "/ferati-test-task/static/media/facebook--hover.e4747d7c29b4a4804d5b.svg",
     "static/media/facebook.svg": "/ferati-test-task/static/media/facebook.3bcfdf6a3064234ccaf8.svg",
-    "main.e4a3eb75.css.map": "/ferati-test-task/static/css/main.e4a3eb75.css.map",
+    "main.9201886a.css.map": "/ferati-test-task/static/css/main.9201886a.css.map",
     "main.e8aebac1.js.map": "/ferati-test-task/static/js/main.e8aebac1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4a3eb75.css",
+    "static/css/main.9201886a.css",
     "static/js/main.e8aebac1.js"
   ]
 }
